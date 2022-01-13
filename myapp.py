@@ -54,13 +54,21 @@ total_case_ind.yaxis.formatter = NumeralTickFormatter(format="00")
 new_case_ind.yaxis.formatter = NumeralTickFormatter(format="00")
 
 # Definisikan line / proses render line
+total_case_ind.line('Date', 'TotalCases',
+                  color='#CE1141', legend_label='Total Kasus di Seluruh Indonesia',
+                  source=indonesia_case)
 
+new_case_ind.line('Date', 'NewCases',
+                  color='#CE1141', legend_label='Kasus Terkini di Seluruh Indonesia',
+                  source=indonesia_case)
 
 #Definisikan bars
 total_case_ind.vbar('Date', top= 'TotalCases', 
                     legend_label='Total Kasus di Seluruh Indonesia', width=0.5, bottom=0, color="salmon")
+show(total_case_ind)
 new_case_ind.vbar('Date', top= 'NewCases', 
                   legend_label='Kasus Terkini di Seluruh Indonesia', width=0.5, bottom=0, color="salmon")
+show(new_case_ind)
 
 # Definisikan legend dengan lokasi atas kiri
 total_case_ind.legend.location = 'top_left'
