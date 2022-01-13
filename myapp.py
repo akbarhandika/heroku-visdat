@@ -63,10 +63,10 @@ new_case_ind.line('Date', 'NewCases',
                   source=indonesia_case)
 
 #Definisikan bars
-total_case_ind.vbar('Date', top= 'TotalRecovered', 
-                    legend_label='Total Kasus di Seluruh Indonesia', width=1, color="deepskyblue", source=indonesia_case)
-new_case_ind.vbar('Date', top= 'NewRecovered', 
-                  legend_label='Kasus Terkini di Seluruh Indonesia', width=1, color="crimson", source=indonesia_case)
+total_case_ind.vbar('Date', top= 'TotalDeaths', 
+                    legend_label='Total Kematian di Seluruh Indonesia', width=1, color="deepskyblue", source=indonesia_case)
+new_case_ind.vbar('Date', top= 'New Deaths', 
+                  legend_label='Kematian Terkini di Seluruh Indonesia', width=1, color="crimson", source=indonesia_case)
 
 # Definisikan legend dengan lokasi atas kiri
 total_case_ind.legend.location = 'top_left'
