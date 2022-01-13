@@ -54,7 +54,7 @@ total_case_ind.yaxis.formatter = NumeralTickFormatter(format="00")
 new_case_ind.yaxis.formatter = NumeralTickFormatter(format="00")
 
 # Definisikan line / proses render line
-total_case_ind.line('Date', 'TotalCases',
+total_case_ind.vbar('Date', 'TotalCases',
                   color='#CE1141', legend_label='Total Kasus di Seluruh Indonesia',
                   source=indonesia_case)
 
