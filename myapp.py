@@ -215,7 +215,7 @@ new_case.line('Date', 'NewCases',
 
 #Definisikan bars
 total_case.vbar('Date', top= 'TotalCases',legend_label='Total Kasus di Seluruh Indonesia', 
-                width=1, color="lavender", alpha = 0.3, source=indonesia_case)
+                width=1, color="lavender", alpha = 0.5, source=indonesia_case)
 new_case.vbar('Date', top= 'NewCases', legend_label='Kasus Terkini di Seluruh Indonesia', 
               width=1, color="plum", alpha = 0.3, source=indonesia_case)
 
