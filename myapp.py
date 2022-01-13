@@ -61,6 +61,8 @@ total_case_ind.line('Date', 'TotalCases',
 new_case_ind.line('Date', 'NewCases',
                   color='#CE1141', legend_label='Kasus Terkini di Seluruh Indonesia',
                   source=indonesia_case)
+#Definisikan bars
+total_case_ind.vbar('Date', top= 'TotalCases', legend_label='Total Kasus di Seluruh Indonesia', width=0.5, bottom=0, color="blue")
 
 # Definisikan legend dengan lokasi atas kiri
 total_case_ind.legend.location = 'top_left'
