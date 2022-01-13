@@ -63,7 +63,7 @@ new_case_ind.line('Date', 'NewCases',
                   source=indonesia_case)
 
 #Definisikan bars
-total_case_ind.vbar('Date', top= 'TotalRecovered', 
+total_case_ind.vbar('TotalCases', top= 'TotalRecovered', 
                     legend_label='Total Pulih di Seluruh Indonesia', width=1, color="deepskyblue", source=indonesia_case)
 new_case_ind.vbar('Date', top= 'NewRecovered', 
                   legend_label='Pulih Terkini di Seluruh Indonesia', width=1, color="crimson", source=indonesia_case)
