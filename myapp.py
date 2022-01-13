@@ -214,10 +214,10 @@ new_case.line('Date', 'NewCases',
               source=maluku_cds)
 
 #Definisikan bars
-total_case_ind.vbar('Date', top= 'TotalCases', 
-                    legend_label='Total Pulih di Seluruh Indonesia', width=1, color="deepskyblue", alpha = 0.5, source=indonesia_case)
-new_case_ind.vbar('Date', top= 'NewCases', 
-                  legend_label='Pulih Terkini di Seluruh Indonesia', width=1, color="plum", alpha = 0.5, source=indonesia_case)
+total_case.vbar('Date', top= 'TotalCases',legend_label='Total Kasus di Seluruh Indonesia', 
+                width=1, color="deepskyblue", alpha = 0.5, source=indonesia_case)
+new_case.vbar('Date', top= 'NewCases', legend_label='Kasus Terkini di Seluruh Indonesia', 
+              width=1, color="plum", alpha = 0.5, source=indonesia_case)
 
 # Definisikan legend dengan lokasi atas kiri
 total_case.legend.location = 'top_left'
